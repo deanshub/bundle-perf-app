@@ -3,6 +3,8 @@ const withInItStats = require('next-in-it-stats/cjs')({
 })
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    reactStrictMode: true,
+}
 
 module.exports = withInItStats(nextConfig)
