@@ -23,6 +23,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^13.4.12"
+    "@next/bundle-analyzer": "^13.4.12",
+    "next-in-it-stats": "^1.0.42"
   }
 }
