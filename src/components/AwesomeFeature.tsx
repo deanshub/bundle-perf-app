@@ -4,7 +4,7 @@ import moment from "moment";
 import Big from './Big'
 import { useEffect, useState } from "react";
 
-export default function Box() {
+export default function AwesomeFeature() {
     const [time, setTime] = useState<string>();
   useEffect(() => {
     setTime(moment().format("MMMM Do YYYY, h:mm:ss a"));
