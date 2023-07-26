@@ -1,21 +1,21 @@
 'use client';
 
-import moment from "moment";
-import Big from './Big'
+import {format} from "date-fns";
+import Small from './Small'
 import { useEffect, useState } from "react";
 
 export default function AwesomeFeature() {
   const [time, setTime] = useState<string>();
   
   useEffect(() => {
-    setTime(moment().format("MMMM Do YYYY, h:mm:ss a"));
+    setTime(format(new Date(), "MMMM Do YYYY, h:mm:ss a"));
   }, []); 
 
   return (
     <div
       className="flex flex-col items-center justify-between p-24"
     >
-      { time ? <Big/> : "Loading..." }
+      { time ? <Small/> : "Loading..." }
     </div>
   );
 }
