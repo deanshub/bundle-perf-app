@@ -8,7 +8,7 @@ export default function AwesomeFeature() {
   const [time, setTime] = useState<string>();
   
   useEffect(() => {
-    setTime(format(new Date(), "MMMM Do YYYY, h:mm:ss a"));
+    setTime(format(new Date(), "MMMM Do yyyy, h:mm:ss a"));
   }, []); 
 
   return (
