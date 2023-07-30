@@ -5,7 +5,8 @@ import Big from './Big'
 import { useEffect, useState } from "react";
 
 export default function AwesomeFeature() {
-    const [time, setTime] = useState<string>();
+  const [time, setTime] = useState<string>();
+  
   useEffect(() => {
     setTime(moment().format("MMMM Do YYYY, h:mm:ss a"));
   }, []); 
@@ -14,7 +15,7 @@ export default function AwesomeFeature() {
     <div
       className="flex flex-col items-center justify-between p-24"
     >
-      {time?<Big/>:"Loading..."}
+      { time ? <Big/> : "Loading..." }
     </div>
   );
 }
