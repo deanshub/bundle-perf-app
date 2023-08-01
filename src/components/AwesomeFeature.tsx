@@ -1,6 +1,6 @@
 'use client';
 
-import {format} from "date-fns";
+import { format } from "date-fns";
 import Small from './Small'
 import { useEffect, useState } from "react";
 
