@@ -1,6 +1,9 @@
-/** @type {import('next').NextConfig} */
+const withInItStats = require('next-in-it-stats/cjs')({
+    legacy: true,
+});
+  /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = withInItStats(nextConfig)
